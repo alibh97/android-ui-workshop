@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space_bg">
+
+    <View
+        android:alpha="1"
+        android:id="@+id/orange_bg"
+        android:background="@color/colorAccent"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:alpha="1"
+        android:id="@+id/black_bg"
+        android:background="@drawable/space_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ali.example.com.cna.custom_views.views.MyTextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="space"
+                android:textColor="#fff"
+                android:textSize="36dp" />
+
+            <ali.example.com.cna.custom_views.views.MyButton
+                android:id="@+id/login_button"
+
+                android:background="@drawable/round"
+                android:elevation="5dp"
+                android:translationZ="10dp"
+                android:textSize="16dp"
+                android:layout_marginBottom="64dp"
+                android:textColor="@color/colorAccent"
+                android:text="ورود"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_width="200dp"
+                android:layout_height="45dp" />
+
+            <ProgressBar
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                style="@style/MyProgressBar"
+                android:id="@+id/progressbar"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+    </FrameLayout>
+
+</FrameLayout>
