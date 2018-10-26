@@ -11,7 +11,7 @@
             <path
                 android:name="path"
                 android:pathData="M 2 2 L 12 12 L 2 22"
-                android:strokeColor="#000000"
+                android:strokeColor="#fff"
                 android:strokeWidth="2"/>
         </vector>
     </aapt:attr>
